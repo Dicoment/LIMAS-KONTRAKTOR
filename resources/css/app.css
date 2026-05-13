@@ -1,0 +1,341 @@
+/* ============================================================
+   LIMAS KONTRAKTOR — Filament Admin CSS
+   ============================================================ */
+
+/* ── 1. WARNA VARIABEL ──────────────────────────────────────── */
+:root {
+    --navy:        #1B3A6B;
+    --navy-dark:   #152d54;
+    --navy-light:  #2a4f8a;
+    --orange:      #E87722;
+    --orange-dark: #cf661c;
+    --bg-page:     #fcfcfc;   
+    --bg-card:     #ffffff;
+    --border:      #e2e8f0;
+    --text-muted:  #64748b;
+}
+
+/* ── 2. SIDEBAR ─────────────────────────────────────────────── */
+.fi-sidebar,
+.fi-sidebar-nav,
+.fi-sidebar-nav-groups,
+.fi-sidebar-header {
+    background-color: var(--navy) !important;
+}
+
+.fi-sidebar-header {
+    border-bottom: 1px solid var(--navy-dark) !important;
+}
+
+.fi-sidebar-item-label {
+    color: #c8d8f0 !important;
+    font-size: 0.875rem !important;
+}
+
+.fi-sidebar-item-icon {
+    color: #7a9bc5 !important;
+}
+
+.fi-sidebar-group-label {
+    color: #7a9bc5 !important;
+    font-size: 0.65rem !important;
+    letter-spacing: 0.1em !important;
+    text-transform: uppercase !important;
+    font-weight: 600 !important;
+    padding-top: 0.75rem !important;
+}
+
+.fi-sidebar-item-btn:hover {
+    background-color: rgba(255,255,255,0.08) !important;
+    border-radius: 0.375rem !important;
+}
+.fi-sidebar-item-btn:hover .fi-sidebar-item-label {
+    color: #ffffff !important;
+}
+
+.fi-sidebar-item.fi-active .fi-sidebar-item-btn {
+    background-color: var(--orange) !important;
+    border-radius: 0.375rem !important;
+}
+.fi-sidebar-item.fi-active .fi-sidebar-item-label,
+.fi-sidebar-item.fi-active .fi-sidebar-item-icon {
+    color: #ffffff !important;
+    font-weight: 600 !important;
+}
+
+/* ── 3. TOPBAR ──────────────────────────────────────────────── */
+.fi-topbar {
+    background-color: #ffffff !important;
+    border-bottom: 1px solid var(--border) !important;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06) !important;
+}
+
+/* ── 4. MAIN AREA ───────────────────────────────────────────── */
+.fi-main-ctn, 
+.fi-main,
+.fi-page,
+.fi-form,
+.fi-sc-ctn,
+main {
+    width: 100% !important;
+    max-width: none !important;
+}
+
+.fi-main-ctn {
+    margin: 0 !important;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+}
+
+.fi-sc.fi-grid {
+    width: 100% !important;
+}
+
+.fi-header-heading {
+    color: var(--navy) !important;
+    font-weight: 700 !important;
+}
+
+/* ── 5. SECTION & CARD ──────────────────────────────────────── */
+.fi-section {
+    background-color: var(--bg-card) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 0.5rem !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05) !important;
+    margin-bottom: 1.25rem !important;
+}
+
+.fi-section-header {
+    background-color: #f8fafc !important;
+    border-bottom: 1px solid var(--border) !important;
+    padding: 0.875rem 1.25rem !important;
+    border-radius: 0.5rem 0.5rem 0 0 !important;
+}
+
+.fi-section-header-heading {
+    font-size: 0.9rem !important;
+    font-weight: 600 !important;
+    color: var(--navy) !important;
+}
+
+.fi-section-content {
+    padding: 1.25rem !important;
+    gap: 1rem !important;
+}
+
+/* ── 6. TABS ────────────────────────────────────────────────── */
+.fi-tabs {
+    background-color: var(--bg-card) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 0.5rem !important;
+    margin-bottom: 1.25rem !important;
+}
+
+.fi-tabs-tab.fi-active {
+    color: var(--orange) !important;
+    border-bottom-color: var(--orange) !important;
+    font-weight: 600 !important;
+}
+
+/* ── 7. TOMBOL PRIMARY ──────────────────────────────────────── */
+.fi-btn.fi-color-primary,
+.fi-ac-btn-action[class*="primary"] {
+    background-color: var(--orange) !important;
+    color: #ffffff !important;
+    border-radius: 0.375rem !important;
+    font-weight: 600 !important;
+    border: none !important;
+    transition: background-color 0.15s ease !important;
+}
+
+.fi-btn.fi-color-primary:hover,
+.fi-ac-btn-action[class*="primary"]:hover {
+    background-color: var(--orange-dark) !important;
+}
+
+/* ── 8. INPUT FIELDS ────────────────────────────────────────── */
+.fi-input {
+    border-radius: 0.375rem !important;
+    border-color: var(--border) !important;
+    background-color: #ffffff !important;
+    font-size: 0.875rem !important;
+    padding: 0.5rem 0.75rem !important;
+}
+
+.fi-input:focus {
+    border-color: var(--navy) !important;
+    box-shadow: 0 0 0 2px rgba(27,58,107,0.15) !important;
+}
+
+.fi-fo-field {
+    margin-bottom: 0.25rem !important;
+}
+
+.fi-fo-field-label {
+    font-size: 0.8125rem !important;
+    font-weight: 500 !important;
+    color: #374151 !important;
+}
+
+/* ── 9. RICH EDITOR ─────────────────────────────────────────── */
+.fi-fo-rich-editor .ProseMirror {
+    min-height: 200px !important;
+    max-height: 500px !important;
+    overflow-y: auto !important;
+    padding: 0.75rem 1rem !important;
+    font-size: 0.875rem !important;
+    line-height: 1.6 !important;
+}
+
+/* ── 10. TABLE ──────────────────────────────────────────────── */
+.fi-ta {
+    background-color: var(--bg-card) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 0.5rem !important;
+    overflow: hidden !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05) !important;
+}
+
+.fi-ta-header-cell {
+    background-color: #f8fafc !important;
+    color: var(--text-muted) !important;
+    font-size: 0.7rem !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.05em !important;
+    padding: 0.75rem 1rem !important;
+}
+
+.fi-ta-row:hover {
+    background-color: #f8fafc !important;
+}
+
+/* ── 11. STATS WIDGET ───────────────────────────────────────── */
+.fi-wi-stats-overview-stat {
+    background-color: var(--bg-card) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 0.75rem !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05) !important;
+    padding: 1.25rem !important;
+}
+
+.fi-wi-stats-overview-stat-value {
+    color: var(--navy) !important;
+    font-weight: 700 !important;
+}
+
+.fi-wi-stats-overview-stat-label {
+    color: var(--text-muted) !important;
+    font-size: 0.75rem !important;
+}
+
+/* ── 12. ACCOUNT WIDGET ─────────────────────────────────────── */
+.fi-wi-account {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%) !important;
+    border-radius: 0.75rem !important;
+    border: none !important;
+}
+
+.fi-wi-account p,
+.fi-wi-account span,
+.fi-wi-account a {
+    color: #ffffff !important;
+}
+
+/* ── 13. TOGGLE ─────────────────────────────────────────────── */
+.fi-fo-toggle[aria-checked="true"] {
+    background-color: var(--orange) !important;
+}
+
+/* ── 14. BADGE ──────────────────────────────────────────────── */
+.fi-badge {
+    border-radius: 0.25rem !important;
+    font-size: 0.7rem !important;
+    font-weight: 600 !important;
+}
+
+/* ── 15. HALAMAN FORM ───────────────────────────────────────── */
+.fi-page {
+    padding: 1.5rem 2rem !important;
+}
+
+/* ── 16. NOTIFIKASI ─────────────────────────────────────────── */
+.fi-no {
+    border-radius: 0.5rem !important;
+}
+
+/* ── 17. WORDPRESS-STYLE 2 KOLOM LAYOUT ────────────────────── */
+.fi-page-create .fi-sc.fi-grid.lg\:fi-grid-cols:first-of-type,
+.fi-page-edit .fi-sc.fi-grid.lg\:fi-grid-cols:first-of-type {
+    --cols-default: 2fr 1fr !important;
+    --cols-lg: 2fr 1fr !important;
+    grid-template-columns: 2fr 1fr !important;
+    align-items: start !important;
+}
+
+.fi-page-create .fi-sc.fi-grid.lg\:fi-grid-cols:first-of-type > .fi-grid-col,
+.fi-page-edit .fi-sc.fi-grid.lg\:fi-grid-cols:first-of-type > .fi-grid-col {
+    grid-column: span 1 / span 1 !important;
+}
+
+.fi-page-create .fi-sc.fi-grid.lg\:fi-grid-cols:first-of-type > .fi-grid-col:last-child,
+.fi-page-edit .fi-sc.fi-grid.lg\:fi-grid-cols:first-of-type > .fi-grid-col:last-child {
+    align-self: start !important;
+    position: sticky !important;
+    top: 1.5rem !important;
+}
+
+/* ── 18. FORCE FULL WIDTH ───────────────────────────────────── */
+.fi-simple-main,
+.fi-main-ctn,
+.fi-page-content,
+.fi-sc-ctn,
+.fi-sc,
+.fi-form,
+.fi-resource-pages-list-records-page,
+.fi-resource-pages-create-record-page,
+.fi-resource-pages-edit-record-page {
+    max-width: 100% !important;
+    width: 100% !important;
+}
+
+.fi-layout-sidebar-ctn {
+    max-width: 100% !important;
+}
+
+.fi-layout-sidebar-content {
+    max-width: 100% !important;
+    flex: 1 1 0% !important;
+    min-width: 0 !important;
+}
+
+.fi-body > div,
+.fi-body > main,
+.fi-body > div > div {
+    max-width: 100% !important;
+}
+
+/* ── 19. FIX FILAMENT V5 PAGE CONTENT ──────────────────────── */
+.fi-page-content {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 1 1 auto !important;
+}
+
+.fi-page-main {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    min-width: 0 !important;
+}
+
+.fi-page-main > .fi-page-content {
+    flex: 1 !important;
+    width: 100% !important;
+}
+
+/* Override grid-auto-columns yang bikin sempit */
+.fi-sc.fi-grid[style*="--cols-default"] {
+    grid-auto-columns: unset !important;
+}
